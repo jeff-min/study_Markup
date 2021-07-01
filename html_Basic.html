@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <title>html_basic</title>
+    <style>
+        img { width: 50%; }
+    </style>
+</head>
+<!-- @ 태그를 닫지 않는 태그들은 항상  열었을때 마지막에 / 표시 습관들이기
+    @ EX )  <br>사용가능하지만 X ==>  <br/> O -->
+<body>
+    <h1>Emphasis 강조</h1>
+    <h3>strong 태그  / em 태그</h3>
+    <p>
+        볼드로 강조하는 strong / 기울여서 강조하는 em
+        <br/>다만 디자인적인 요소는 언제든지 css 로 바꿔 줄 수 있기 때문에
+        <br/>신경 써도 않아도 되며 , 우리가 중요시 여길건 브라우저에게 이부분은 강조 되는 부분이란걸 알려주는
+        <br/> 정보적인 차원에서 html 을 잘 써줘야 한다는 것.  
+    </p>
+    <br/>
+    
+    <p>
+      가끔씩 생각을 한다.
+    <br/> <strong>머리</strong>가 아닌 <em>마음</em>으로 
+    </p>
+
+    <hr>
+
+    <h1>Anchor 링크</h1>
+    <h3>a 태그 / a href=""</h3>
+    <a href="">a태그</a>
+    <!-- $  href란  : hypertext reference 하이퍼텍스트 주소값 -->
+    
+
+    <ol>
+        <li>링크</li>
+        <li>페이지내 이동</li>
+        <p>
+            a태그 attribute 인 href = "#id값" (페이지내 이동할 아디값을 적어준다.)
+        </p>
+        <li>메일 쓰기</li>
+        <p>
+            a태그 attribute 인 href = "mailto:메일주소" ()
+        </p>
+        <li>전화걸기</li>
+        <p>
+            모바일에 한에서 쓰긴 함 / href = "tel:전화번호"
+        </p>
+        <li>attribute 인 target ="_blank"  / 링크이동 하는대 새탭으로 이동</li>
+    </ol>
+
+    <hr>
+    <h1>Image 이미지</h1>
+    <h3>img / img src="" alt=""</h3>
+    <img src="" alt=""/>
+    <p> src = source
+    <br/> alt = alternative text (대체 텍스트)
+    <br/> => screen reader 으로 시각적으로 보지 못하는 분들도 대체로 청각으로 듣게 할 수 있음.
+    <br/> => 사진이 깨져서 엑박이 났을때 대체 적으로 알려줌.</p>
+
+    <img src="https://bit.ly/2mvVsGI" alt="개와 고양이가 마주 보다" >
+    <!-- # src = "Sorce URL 을 적는다."-->
+    <!-- # 절대경로 사용-->
+
+    <img src="images/cat.png" alt="고양이">
+    <!-- # src = "저장된 파일의 경로를 적는다."  -->
+    <!-- # 상대경로 사용 -->
+
+    <hr>
+    <h1>List 리스트</h1>
+    <h3>ol   /  ul </h3>
+    <p>
+         ol  = Ordered List
+    <br/>ul  = Unordered List
+    <br/>li  = List Item   
+    </p>
+    <ol>
+        <li>ol 태그 > 순서가 중요한 목록</li>
+    </ol>
+    <ul>
+        <li>ul 태그 > 순서가 중요하지 않는 목록</li>
+    </ul>
+    <li>
+        li 태그 > ul /ol 안에 항목을 나타냄 / ul 과 ol의 자식요소는 무조건 li만 가능
+    </li>
+
+    <hr>
+    <h1>Description List 정의 리스트</h1>
+    <h3>dl  태그 </h3>
+
+    <ol>
+        <li>용어를 정의할 때</li>
+        <li>Key-value로 정보를 제공할 때</li>
+        <p>
+            Key-value =>  key : value  / ex ) 나이 :26  
+        </p>
+        <li>용어를 정의할 때</li>
+    </ol>
+    <p>
+        관련된 태그
+        <br>dt / dd / dfn 
+        <p>
+            dt  > Description term -이름에 해당되는 마크업 [key 에 해당]
+        <br>
+            dd  > Description Date - 내용 [value 값에 해당]
+        <br>
+            dfn  > definition - 좀 더 사전적으로 구체적으로 설명 하고 싶을 때 사용
+
+        </p>
+    </p>
+    <!-- # div 로 묶어 줄 수 있다 . dt 와 dd 의 관계만 잘 사용하면 됌 -->
+    <!-- ! section 로 묶어 줄 수 없다 . dl 태그 안에 직계 자식으로는 div / dt / dd 로만 가능하다.-->
+    <!-- ! dt 제목으로만 혼자  / dd 내용으로만 각자 쓰지 않는다.-->
+
+    <dl>
+        <div>
+            <dt>제목
+                <dd>
+                    설명
+                </dd>
+            </dt>
+        </div>
+        <div>
+            <dt> key
+                <dd>
+                    value
+                </dd>
+            </dt>
+        </div>
+    </dl>
+    <hr>
+    <h1>Quotations 인용</h1>
+    <h3>blockquote  /  q</h3>
+    <p>
+        blockquote - 어떤 문장 전체가 인용문일 때
+        <br> q 보다 많이 사용 
+    </p>
+    <!-- # 주소를 명시 하고 싶으면 blockquote cite= "url 명시" -->
+    <blockquote cite="https://www.naver.com">
+        우리가 겪을 수 있는 가장 아름다운 체험은 신비다.
+    <br>신비는 모든 참 예술과 과학의 근원이다.
+        <cite>- 알버트 아인슈타인</cite>
+        <!-- # cite  => 출저 -->
+    </blockquote>
+
+
+    <blockquote cite="https://bit.ly/2mvSYrT"> 
+        <!-- # 나의 경우 이걸 쓸 때 책을 아예 가져다 왔기 떄문에  blockquote으로 전체 묶어준거 -->
+        <p>
+            q  - 문장내 살짝 들어간 인용문 사용 할 시 (따옴표가 생긴다.)
+        </p>
+        <p>The study is the first to project the long-term outlook for Antarctica's largest penguins, which can grow 1.2 meters (four ft) tall, seeking to fill a gap in understanding climate change and wildlife in one of the remotest parts of the planet.</p>
+        <p>Overall, numbers were set to fall by at least 19 percent from current levels by 2100 as sea ice melts. And two-thirds of colonies of the birds, which have distinctive golden head patches, would decline by more than half, it said.</p>
+        <p>
+            <q>"It's not happy news for the emperor penguin,"</q> <!-- # 말 / 인용문 -->
+             said Hal Castellan of the U.S. Woods Hole Oceanographic Institution, a co-author of the study in the journal Nature Climate Change.
+            </p>
+        <p>
+            <cite> <!-- # 출처 -->
+                “Emperor Penguin Population to Slide Due to Climate Change”, Scientific American, June 29, 2014, https://bit.ly/2mvSYrT
+            </cite>
+            </p>
+    </blockquote>
+    
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <title>html_Form_basic</title>
+
+</head>
+<body>
+    <h1>Form </h1>
+    <p>
+        form action ="" method =""
+    </p>
+    <form action=""></form>
+    <p>
+       HTML Markup 할 때  웹 브라우저에게  정보를 주기 위함을 중요시 했다면
+       <br/>Form 은 사용자들에게 정보를 (input)받기 위함이다.
+       <br/>Form 은 Syntax Alert 문법적 규칙이 빡세다.
+    </p>
+    <ol>
+        <li>form 사용할 시 반드시 이제 사용할 거라는 form 태그를 써줘서 알려줘야 한다.</li>
+        <li>form 태그는 반드시 써줘야하는 attribute 가 있다
+            <br/>action =  "API 주소"  / method = "GET | POST "
+        </li>
+    </ol>
+    <!-- @ form 이 정보를 받는다는건  서버에게 전달해 준다는 것
+        @ form 의 값을 가지고 처리할 녀석이 있으니 .
+    
+        # 그 무언가 처리하는걸 명시해 주는게 action
+        $ form 으로 받은 정보를 처리해 줄 API (서버쪽 친구)에게 접근 가능한 URL-->
+
+        <p>
+            method = "GET | POST " 
+        <br/>간단하게 ==> 중요한 정보이거나 / 정보량이 많을 때는 POST   그렇지 않는다면  GET 을 사용
+        <br/>action =  "API 주소" 
+        <br/> form 으로 받은 정보를 처리해 줄 API (서버쪽 친구)에게 접근 가능한 URL 주소
+        </p>
+
+        <hr>
+        <h1>form 안에 채울 다양한 Filed(필드) 태그들</h1>
+        <h2>input 태크</h2>
+        <p>사용자 정보를 입력하는 창
+            <br/>input - 입력창 , 인풋 필드 (input filed) 라고도함
+        </p>
+        <!-- @  Syntax Alert 문법 주의
+            type = " ?" 이라는 attribute 를 반드시 써줘야한다.
+            # type = "text" 등 입력창에 맞게 type 을 쓰면  알맞은 종류의 입력창 으로 생성
+
+         -->
+
+         <h3>input 의 각각의 tpye </h3>
+
+
+        <form action=""   method="GET">
+             <input type="text"
+             placeholder="이름을 입력하세요"
+             minlength="5" maxlength="13" required/>
+            
+            <!-- @ input 태그는  사용할 수 있는 공통 Attribute 가 있다 .
+                $   placeholder     =>  아무 값이 없을 때 기본적으로 보여줄 값
+                $   minlength       =>  infut 창의 문자의 갯수를 제한 하고 싶을때 (최소 몇 글자)
+                $   maxlength       =>  infut 창의 문자의 갯수를 제한 하고 싶을때 (최대 )
+                $   required        =>  를 쓴 infut 의 filed 는 반드시 작성해라.
+            -->
+
+             <input type="text" placeholder="name 입력하세요"
+             minlength="5" maxlength="13"
+             disabled   value="지현민"/>
+             <!-- 
+                 $  disabled        =>  입력할려 해도 사용하지 못하게 막아 놓음.
+                 $  value           =>  filed 에 텍스트를 채워 놓음 placeholder 는 실체가 없지만  value값은 입력한 값을 나타냄.
+              -->
+             <button>
+                 Submit
+             </button>
+        </form>
+
+        <br/>
+        <form action="" method="GET">
+            <input type="password" placeholder="비밀번호를 입력하세요"/>
+             <!--  $ type="password"    /  비밀번호 형식으로 감춰서 나옴-->
+            
+            <input type="email"
+            placeholder="이메일을 입력하세요"/>
+            <!--  $ type="email"        /   @가 포함되어야함 (실수 방지.)-->
+           
+            <input type="url" placeholder="URL을 입력하세요"/>
+            <!--  $ type="url"          /   https://  (url)이 포함되어야함 (실수 방지.)-->
+            
+            <input type="tel" placeholder="전화번호를 입력하세요">
+            <!--  $ type="email"        /   @가 포함되어야함 (실수 방지.)-->
+            <button>
+                Submit
+            </button>
+
+            <!-- @ 통째로 외우지 않아도  적절한 input type 을 찾아서 쓰면 되니  적당히 눈에 익히기. 
+                 @ 중요한것은 input 무엇인지 기억하고 각각의 사용자들에게 그에 걸맞는 input type 을 설정해주는 것 -->
+            <br/>
+            <br/>
+            <input type="number"
+            placeholder="숫자를 입력하세요(12 이상 ~~ 122 이하)"
+            min="12" max="30"/>
+            <!--  $ type="number"        /  숫자만 표기가능 문자형 x-->
+            <!--  $ type="min"           /  minlength 와 다르게 숫자의 최소값-->
+           
+            <input type="file"  value=".png  .jpg 만 허용"
+accept=".png , .jpg" > 
+            <!-- style="display: none;"  기존의 input file 태그 숨김
+                # css 로 디자인 가능 = 폼 필드 디자인 / 폼 커스터마이징.-->
+             <!--  $ type="file"            /  choose file 파일을 첨부 할때 -->
+             <!--  $ type="accept = "파일 확장자 | 미디어타입 "     /  허용하는 파일에 확장자명이 정해졌을때 사용-->
+             <!-- 	
+닷(.)으로 시작되는 파일 확장자      ex) .png, .jpg, .pdf, .hwp
+    audio/*                       모든 타입의 오디오 파일이 허용됨. 
+    video/*
+    image/*
+    미디어 타입                     매개변수(parameter)를 가지지 않는 유효한 미디어 타입 -->
+
+
+        </form>
+</body>
+</html>
+
+
+

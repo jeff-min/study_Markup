@@ -1,0 +1,116 @@
+<!--  Section 으로 Markup 해도 문제가 없다 / 논리적으로 완결된 하나의 집합체 이기 때문. 하지만. -->
+<!-- # 논리적으로 완결되었짐나 본문 내용과 직접적인 연관 없고 약간 동떨어져서 분리된 Markup 을 할 때는
+     # ex )  위젯이라던가 . 배너라던가 사이드로 나오는.
+     @ Section 보다는 Aside 로 Markup 하는게 늬앙스를 더 살릴 수 있다. -->
+
+<aside>
+    <header>
+        <h1>
+            Worldwide-trends
+        </h1>
+        <button type="button" aria-label="Options">
+            <!-- Icon -->
+        </button>
+    </header>
+
+    <ol>
+        <li>
+            <button type="button" aria-label="options">
+                <!-- Icon -->
+            </button>
+            <div>
+                <button type="button">
+                    <!-- Icon -->
+                    This trend is spam
+                </button>
+                <button type="button">
+                    <!-- Icon -->
+                    This trend is spam
+                </button>
+            </div>
+
+            <!-- ! 원래는 li 태그 안에 a 태그로 다 묶어줫는데
+        ! <a> 태그 내부에 또 다른 클릭할 수 있는 <button>이 있는 건 적합하지 않다. -->
+            
+            <a href="#">
+                <span> 1 - Trending Worldwide</span>
+                <strong lang="ko">지현민</strong>
+                <span>100k tweets</span>
+            </a>
+        </li>
+
+        <li>
+            <button type="button" aria-label="options">
+                <!-- Icon -->
+            </button>
+            
+            <div>
+                <button type="button">
+                    <!-- Icon -->
+                    This trend is spam
+                </button>
+                <button type="button">
+                    <!-- Icon -->
+                    This trend is spam
+                </button>
+            </div>
+
+            <a href="#">
+                <span> 1 - Trending Worldwide</span>
+                <strong lang="ko">지현민</strong>
+                <span>100k tweets</span>
+            </a>
+
+        </li>
+        <li>
+            <button type="button" aria-label="options">
+                <!-- Icon -->
+            </button>
+
+            <div>
+                <button type="button">
+                    <!-- Icon -->
+                    This trend is spam
+                </button>
+                <button type="button">
+                    <!-- Icon -->
+                    This trend is spam
+                </button>
+            </div>
+
+            <a href="#">
+                <span> 1 - Trending Worldwide</span>
+                <strong lang="ko">지현민</strong>
+                <span>100k tweets</span>
+            </a>
+
+        </li>
+        <li>
+            <button type="button" aria-label="options">
+                <!-- Icon -->
+            </button>
+
+            <div>
+                <button type="button">
+                    <!-- Icon -->
+                    This trend is spam
+                </button>
+                <button type="button">
+                    <!-- Icon -->
+                    This trend is spam
+                </button>
+            </div>
+
+            <a href="#">
+                <span> 1 - Trending Worldwide</span>
+                <strong lang="ko">지현민</strong>
+                <span>100k tweets</span>
+            </a>
+
+        </li>
+    </ol>
+
+    <button type="button"> 
+        Show more
+    </button>
+</aside>

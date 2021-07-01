@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-Player_list-Markup</title>
+    <link rel="stylesheet" href="css/Music-Player_list-Markup.css">
+</head>
+
+<body>
+   <!-- #  음악 플레이어 같은 경우는 순서가 중요하니(어떤 음악이 재생되었나) / 순서 list -->
+
+   <ol class="music-player">
+       <li class="music-play-item">
+           <img src="https://m.media-amazon.com/images/I/814Rp76DidL._SS500_.jpg"
+           alt="러브 엑스 마키나"
+           class="music-album-cover"
+           lang="ko" /> <!-- # alt 에서 설명을 한국말로 해줘서 language 를 바꿔줌 -->
+
+           <div class="music-info">
+               <div class="music-info-detail"> <!-- 먼저 같은 줄인  h1 과 strong 태그를 감싸고 / span 까지 같은 그룹핑으로 한번더 감싸줌 -->
+                   <h1>
+                       <span lang="ko">러브 엑스 마키나</span>
+                     Love Ex Machina
+                    </h1>
+                    <strong>
+                        MLSL (밀레니엄 살롱)
+                    </strong>
+               </div>
+                <span>      <!-- # Duration 이라는 정보를 주기 위해 span 처리로 써주고  /<class="sr-only"> 브라우저에서 감추기 -->
+                    <span class="sr-only"> Duration</span> 
+                    04:09       <!--# 04:09 중요한 정보아니니 span 처리 -->
+                </span>
+           </div>
+            <audio src="css/assets/music-1.mp3" class="music-audio"></audio>
+       </li>
+
+       <li class="music-play-item">
+        <img src="http://image.genie.co.kr/Y/IMAGE/IMG_ARTIST/080/660/591/80660591_1560403300605_1_600x600.JPG"
+        alt="올라가"
+        class="music-album-cover"
+        lang="ko" /> 
+
+        <div class="music-info">
+            <div class="music-info-detail"> 
+                <h1>
+                    <span lang="ko">올라가</span>
+                 </h1>
+                 <strong>
+                     권선홍
+                 </strong>
+            </div>
+             <span>
+                 <span class="sr-only"> Duration</span>
+                 03:33 
+             </span>
+        </div>
+         <audio src="css/assets/music-2.mp3" class="music-audio"></audio>
+
+    </li>
+   </ol>
+ 
+
+   <script src="js/Music-Player_list-Markup.js">
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

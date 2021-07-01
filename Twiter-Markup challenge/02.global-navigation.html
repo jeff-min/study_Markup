@@ -1,0 +1,69 @@
+<!-- $ 문서페이지를 이동할 수 있느 핵심 메뉴중 하나
+     $ 이런 경우 navigation 을 써줘서 의미 있게 만들자.-->
+
+    <!-- @ navigation 은 반드시 heading 태그 (제목)가 따라와야한다. 
+    ? navigation 같은 경우에는 Section이 element 니까.-->
+
+<nav>
+    <h1>Golbal navigation</h1>
+    <ul>
+        <li>
+            <a href="#">
+                <span class="sr-only" >Current page</span>
+                <!-- Icon -->
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <!-- Icon -->
+                Explore
+            </a>
+        </li>
+        <li>
+            <a href="#"> <!-- Notificationss 체크하지 않은 알람 5개가 있으니. -->
+                <!-- # 중요하다 판단 강조로 span이 아닌 strong 으로 해주며 
+                     # 체크하지 않은 Notifications이 있다고 알려줌 -->
+                <strong aria-label="5 unread Notifications">5</strong>
+                <!-- Icon -->
+                Notificationss
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <!-- Icon -->
+                Messages
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <!-- Icon -->
+                Bookmarks
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <!-- Icon -->
+                Lists
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <!-- Icon -->
+                Profile
+            </a>
+        </li>
+        <li>
+            <!-- # 다른 요소는 앵클이동인데 more 은 드롭다운 메뉴임 (다른게 더 나온다.) -->
+            <!-- <a href="#"> More</a>   <!-- so a 태그가 아닌 button 으로 바꿔준다. -->
+            <button type="button">
+                <!-- Icon -->
+                more
+                <!-- # Dropdown menu 위치임 /  마크업  하기!! -->
+            </button>
+        </li>
+    </ul>
+    <button type="button">
+        Twiter
+    </button>
+</nav>

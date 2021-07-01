@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <title>Table_Advanced</title>
+    <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+    <table>
+        <!-- @ table 태그에서만 쓸 수 있는 
+            # scope = "row  |  col" 
+            $ 웹 브라우저에게  row 헤더인지 col 헤더인지 더 명확히 정보를 줄 수 있음.
+            # row 행 (세로줄) | col 열 (가로줄)  
+        -->
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">월</th>
+                <th scope="col">화</th>
+                <th scope="col">수</th>
+                <th scope="col">목</th>
+                <th scope="col">금</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th  scope="row">1교시</th>
+                <td rowspan="2" class="CSS">CSS</td>
+                <td class="language">language</td>
+                <td rowspan="2" class="CSS">CSS</td>
+                <td class="language">language</td>
+                <td rowspan="2" class="CSS">CSS</td>
+            </tr>
+            <tr>
+                <th scope="row">2교시</th>
+                <!-- <td></td> -->
+                <td rowspan="2" class="skill">skill</td>
+                <!-- <td></td> -->
+                <td rowspan="2" class="skill">skill</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <th scope="row">3교시</th>
+                <td class="HTML">HTML</td>
+                <!-- <td></td> -->
+                <td class="HTML">HTML</td>
+                <!-- <td></td> -->
+                <td class="HTML">HTML</td>
+            </tr>
+            <!-- @ 공백이여도 항상 칸 수 를 맞추라고 했지만.
+                 @ rowspan ="2" 로 묶었을 때는 2칸으로 인식하기 때문에 none처리 -->
+            <tr>
+                <th colspan="6" scope="row" class="breakT"> 점심시간</th>
+            <!-- <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <th scope="row">4교시</th>
+                <td class="basic">basic</td>
+                <td rowspan="2" class="pofol">pofol</td>
+                <td rowspan="2">open seminar</td>
+                <td rowspan="2" class="pofol">pofol</td>
+                <td class="basic">basic</td>
+            </tr>
+            <tr>
+                <th scope="row">5교시</th>
+                <td class="language">language</td>
+            <!-- <td>pofol</td>
+                <td>open seminar</td>
+                <td>pofol</td> -->
+                <td class="language">language</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>

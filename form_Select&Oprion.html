@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <title>form_Select&Oprion</title>
+</head>
+<body>
+    <form action=" " method="GET">
+        <label for="skill">language</label>
+        <select name="skill" id="skill">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+        </select>
+            <!-- # select 안에  항목을 만들려면  option을 사용해야함.
+                 @ Syntax Alert 문법 주의
+                 @ select 안에 다들어가 있으니 name 한번만  연결해도 되는거고  value 값은 구분해주기 위해 다 다르게 해줘야함
+            -->
+
+            <button type="submit">
+                submit
+            </button>
+    </form>
+
+    <form action=" " method="GET">
+        <label for="skill">language</label>
+        <select name="skill" id="skill"
+        multiple>
+        <!-- $  multiple :  다중선택 가능-->
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+        </select>
+            
+            <button type="submit">
+                submit
+            </button>
+    </form>
+
+</body>
+</html>

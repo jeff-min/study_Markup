@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='ko'>
+    <!-- 한글 쓸거니 바꿔주기 -->
+<head>
+<meta charset='UTF-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Card</title>
+    <link rel="stylesheet" href="css/Product-Card-style.css">
+
+    <!-- # WAI-ARIA  : 인터넷에 접근성을 도와주는 API  / WAI-ARIA 의 hidden 속성을 이용할 거임.-->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <img src="https://user-images.githubusercontent.com/19285811/69318246-becd7980-0c77-11ea-8324-6c43e2de8cf2.png"
+    alt=""> -->
+    <!-- @ 따라오는 요소중에 이미지에 대한 이야기를 해주는게 있기 때문에
+        @ alt="혼자가 혼자에게" 굳이 적어서 두번 읽히는거 보다 제목태그가 대표하게 하는것 이 좋음.  -->
+
+        <!--# 위에서 말햇듯이 alt 대신 적는거기 때문에 다른 정보보다 이미지를 대신 해준 정보를 먼저 적어주는게 좋을 수 있음.  -->
+        <!-- ! css 적용후 title 과 author 위치가 바뀌어 나오는대 
+             ! Markup 은 제대로 한거임 (접근성은 좋고)  / CSS 로 디자인 해준 것.(바꿔준 것) -->
+        <div class="product-card">
+
+            <div class="product-card-image"> <!-- ? img 를 div 한번더 감싸줬는데 마크업 적인 이유는 아님 그냥  
+                                                so 스타일을 더 잘 먹이기 위한 skill 같은거-->
+                <img src="https://user-images.githubusercontent.com/19285811/69318246-becd7980-0c77-11ea-8324-6c43e2de8cf2.png"
+                alt="">
+            </div>
+
+            <div class="product-card-title">
+                <h1>
+                    혼자가 혼자에게
+                </h1>
+                <strong aria-label="오늘의 책 선정">
+                    오늘의 책
+                </strong>
+            </div>
+            
+            <strong aria-label="저자 이병률" class="product-card-author">
+                이병률
+            </strong>
+
+            <strong aria-label="평점이 9.4" class="product-card-review">
+                <span aria-hidden="true">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                </span>
+                9.4
+            </strong>
+        </div>
+        <!-- ! 별점은 꾸미기 위한 정보 (별점보다는) / 9.4 라는 실직적으로 보이는 숫자가 더 중요하다는 정보 -->
+        <!-- # 별점은 넘어가자라는 식의 처리 방법  WAI-ARIA 의  hidden 속성 (읽지 말아라.) -->
+        <!-- so 마크업을 해도 의미가 없는 상태로 바뀐다. -->
+</body>
+
+</html>
+

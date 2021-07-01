@@ -1,0 +1,69 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>form_label</title>
+  <link rel="stylesheet" href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./styles.css">
+  <!-- # 사실 label 특정 케이스 빼고는 부가적인 태그다. 굳이 사용하지 않아도 괜찮다.
+        $ label  : (input) form 양식에 대한 제목 / 이름을 붙이는 태그
+        @ Syntax Alert 문법 주의
+        @ label 을 쓸때는 어떠한 infut 과 관련이 있는지 반듯이 연결 시켜줘야한다. 
+        @ 그렇기 때문에 for 속성을 꼭 사용한다 .
+        # <label for ="누구를 지칭"> 라벨 </label> 
+        #        for = "infot ID값"   / <input id = "ID값" type ="text">
+    -->
+</head>
+<body>
+
+    <form action=""   method="GET">
+        <label for="user-name">이름</label>
+        <input type="text" id="user-name"
+        placeholder="이름을 입력하세요"
+        minlength="5" maxlength="13" required/>
+
+        <label for="disabled">불가능</label>
+        <input type="text" placeholder="name 입력하세요" id="disabled"
+        minlength="5" maxlength="13"
+        disabled   value="지현민"/>
+
+        <button>
+            Submit
+        </button>
+   </form>
+
+   <br/>
+   <form action="" method="GET">
+        <label for="user-password">비밀번호</label>
+       <input type="password" id="user-password" 
+       placeholder="비밀번호를 입력하세요"/>
+       
+       <label for="user-email">이메일</label>
+       <input type="email" id="user-email"
+       placeholder="이메일을 입력하세요"/>
+
+       <label for="user-tel">전화번호</label>
+       <input type="tel" id="user-tel"
+       placeholder="전화번호를 입력하세요"/>
+
+       <label for="user-sorce">URL</label>
+       <input type="url" id="user-sorce"
+       placeholder="URL을 입력하세요"/>
+
+       <label for="user-age">만 나이</label>
+       <input type="number" id="user-age"
+       placeholder="숫자를 입력하세요(12 이상 ~~ 122 이하)"
+       min="12" max="30"/>
+
+       <label for="user-file-picture">프로필 사진</label>
+       <input type="file" id="user-file-picture"
+       accept="Image/* ,audio/* ,video/*"> 
+
+       <button>
+            Submit
+        </button>
+    
+</body>
+</html>

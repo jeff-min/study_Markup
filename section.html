@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section</title>
+</head>
+<body>
+    <h1>문서 설계 하기</h1> 
+    <!-- # 구조적으로 문서를 설계한다. -->
+    <ol>
+        <li>글의 <strong>구조</strong>를 쉽게 파악</li>
+        <li>글의 전개<strong>흐름</strong>을 파악</li>
+        <li>정보의<strong>위계질서</strong> 파악</li>
+        <li>브라우저도 마찬가지 <strong>개요</strong>가 필요하다</li>
+        <h3>개요가 필요해 설계 할 때 사용하는 요소들이 Sectioning Elements</h3>
+        <h4>
+            Sectioning Elements
+        </h4>
+        <ol>
+            <li>section</li>
+            <li>article</li>
+            <li>nav</li>
+            <li>aside</li>
+        </ol>
+        <h4>sectioning Elements 는 아니지만 
+            <br/> 문서적 도움을 주는 요소 3가지</h4>
+        <ol>
+            <li>header</li>
+            <li>main</li>
+            <li>footer</li>
+        </ol>
+
+    </ol>
+    <p>ex) 책의 개요를 확인한다.</p>
+    <ol>
+        <li>몇 단원으로 구성이 되었는지</li>
+        <li>각 단원의 제목</li>
+        <li>소단원과 소단원의 주제</li>
+    </ol>
+
+    <hr>
+    <h1>Sectioning elements = 단원</h1>
+    <h3>작성할 때 공통적인 부분을 찾아보자</h3>
+    <p> 단원이라 비유하면 / 단원에는 반드시 주제,  <strong>제목</strong>이 있다.</p>
+    <ol>
+        <li>Sectioning elements 내에는 반드시 <strong>Heading 태그</strong>를 작성해야한다.</li>
+
+    </ol>
+
+    <section>
+        <h1>섹션의 제목</h1>
+        <p>내용</p>
+    </section>
+
+    <nav> <!-- # ul li 만 작성할 땐 괜찮지만 section 요소인 nav를 쓰게 되면 반드시 heading태그는 있어야 한다. -->
+        <h1></h1> <!-- @ 제목이 없고 / 우리 눈에는 보이지 않을 지언정 navigation 이 무슨 네비게이션이 이구나라고 정보를 좀 더 명확하게 전달함. -->
+        <ul>
+            <li>
+                <a href="#">링크</a>
+            </li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

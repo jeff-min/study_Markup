@@ -1,0 +1,54 @@
+<!-- # Tweet Form 은 독립적으로 오로지 트윗을 전송하기 위한 폼만을 담당하고 있다.. -->
+<!-- # 그렇기 때문에 브라우저에게 여기는 폼만 담당하는 섹션이야 라고
+     # section 을 이용해 알려주면  훨씬 더 늬앙스가 배가 된다  -->
+
+<section>
+    <h1>What's happening</h1>
+    
+    <form action="" method="POST">
+        <img src="#" alt="user_name">
+        <textarea name="" id="" cols="30" rows="10" maxlength="280"
+        placeholder="What's happening">
+        </textarea>
+
+        <button type="button" aria-label="Upload files">
+                <!-- Icon --> <!-- so input 대신해 만들어준것 icon 넣을 수 도 / css 할 수  도 있음. -->
+        </button> 
+
+        <input type="file" multiple accept="image/* , video/*"/>
+        <!-- @ input 태그는 죽어도 css 디자인이 안먹힘 
+            so 스타일 적인 목적으로 button 태그를 만들어줘서 -->
+
+        <button type="button" aria-label=" Search GIFs...">
+               <!-- Icon -->
+        </button> 
+
+        <button type="button" aria-label=" Create a poll">
+               <!-- Icon -->
+        </button> 
+
+        <button type="button" aria-label=" Choose emoji">
+               <!-- Icon -->
+        </button> 
+
+        <!-- # 텍스트 글자의 수를 알려주는 정보라서 / 텍스트 와 같다고 생각하고 중요하다고 생각함! -->
+        <strong aria-label = "0 out of 200 characters"> <!-- 수가 바뀔 때마다 1,2,3..... 계속 정보르 바꿔줌 -->
+            <!-- CSS ,JS -->
+        </strong>
+
+        <button type="button" aria-label=" Add another tweet ">
+            <!-- Icon -->
+        </button> 
+
+        <button type="submit">
+            Submit
+        </button>
+    </form>
+    <!-- @ 계속 말하지만 아주 중요한것은 !!!!!
+    <!-- todo HTML 문서안에 논리적인 완결성있는 집합체를 Markup 할 때 묶어줘야하는데 
+        @ 묶어 줄 때는 div 를 쓰는 것 보다 늬앙스를 더 살려 줄 수 있는 Section element 을 쓰는게 좋다.
+        # Section element 중에 가장 만만한 section 을 이용했음
+        so 이렇게 해야 훨씬 더 semantic 하게 Markup 을 한것!
+        
+     -->
+</section>

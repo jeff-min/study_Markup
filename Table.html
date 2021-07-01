@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <title>Table</title>
+</head>
+<body>
+    <h1>Table</h1>
+
+    <table>
+        <tr> <!-- $ tr :  table row (가로줄) -->
+            <th>테이블 헤더</th>    <!-- $ th 는 thead 로 한번더 묶어서 더 명확하게 브라우저에 정보를 제공한다.-->
+            <td>테이블 데이터</td>  <!-- $ td 는 tbody 로 한번더 묶어서 더 명확하게 브라우저에 정보를 제공한다. -->
+        </tr>                       <!-- # 안써도 같은 뜻이여서 상관 없긴하지만 정보 제공목적. -->
+
+    </table>
+
+    <br/>    
+        
+    <table>
+
+        <thead>
+            <tr> <!-- $ tr :  table row (가로줄) -->
+                <th>ID</th>
+                <th>이름</th>
+                <th>개발분야</th>
+                <th>기타</th>
+                <!-- @ Syntax Alert 문법 주의
+                # 브라우저엔 공백이라서 아무렇지 않게 보일지 몰라도
+                # 표는 항상 칸 수를 맞춰 줘야함
+                # 공백으로 놔두더라도 칸은 만들어 줘야함  -->
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>0101010</td>
+                <td>지현민</td>
+                <td>프론트엔드</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>0101011</td>
+                <td>지씨 아저씨</td>
+                <td>풀스텍</td>
+                <td></td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <!-- $ 테이블을 쓸 때  총 합계  or 결론일 때 
+                # 마지막 부분에 사용 -->
+        </tfoot>
+    </table>
+
+    
+</body>
+</html>
